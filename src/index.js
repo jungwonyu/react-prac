@@ -5,15 +5,24 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import Clock from "./chapter_clock/Clock";
+import CommentList from "./chapter_comment/CommentList";
 
-setInterval(() => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <Clock />
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
-}, 1000);
+ReactDOM.render(
+  <React.StrictMode>
+    <CommentList />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+// Clock
+// setInterval(() => {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <Clock />
+//     </React.StrictMode>,
+//     document.getElementById("root")
+//   );
+// }, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
