@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# REACT-PRAC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## chapter_clock
 
-## Available Scripts
+### 엘리먼트
 
-In the project directory, you can run:
+- 엘리먼트의 정의
 
-### `npm start`
+* 리액트 앱의 가장 작은 빌딩 블록들
+* 화면에 나타나는 내용을 기술하는 자바스크립트 객체
+* 리액트 엘리먼트는 DOM 엘리먼트의 가상 표현
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 엘리먼트의 생김새
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 엘리먼트는 자바스크립트 객체 형태로 존재
+* 컴포넌트 유형과 속성 및 내부의 모든 자식에 대한 정보를 포함하고 있는 일반적인 자바스크립트 객체
 
-### `npm test`
+- 엘리먼트의 특징
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 불변성을 갖고 있음
+* 엘리먼트 생성 후에는 자식이나 속성을 바꿀 수 없음
 
-### `npm run build`
+### 엘리먼트 렌더링하기
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 렌더링을 위해 ReactDOM의 render()라는 함수를 사용
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* 리액트 엘리먼트를 HTML 엘리먼트에 렌더링하는 역할
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 렌더링되는 과정은 Virtual DOM에서 실제 DOM으로 이동하는 과정
 
-### `npm run eject`
+### 렌더링된 엘리먼트 업데이트하기
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 엘리먼트는 한 번 생성되면 바꿀 수 없기 때문에 엘리먼트를 업데이트하기 위해서는 다시 생성해야 함
+- 기존 엘리먼트를 변경하는 것이 아니라 새로운 엘리먼트를 생성해서 바꿔치기하는 것
